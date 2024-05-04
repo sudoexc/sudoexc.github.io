@@ -1,5 +1,5 @@
 .main-container
-    padding: 0 40px
+    padding: 0 32px
 
 nav
     padding-top: 19px 0
@@ -9,10 +9,13 @@ nav
     justify-content: space-between
     align-items: center
     position: relative
+    .logo-hide
+        display: none
+    .logo-mobile
+        display: none
     .menu-list
         list-style: none
         display: flex
-        height: 32px
         align-items: center
         &__link
             border-right: 1px solid $border-color
@@ -37,8 +40,9 @@ nav
         display: flex
         align-items: center
         justify-content: space-between
-        
-        .user
+        &__button
+            display: none !important
+        &__user
             display: flex
             justify-content: center
             align-items: center
@@ -47,10 +51,183 @@ nav
             width: 32px
             height: 32px
             margin-right: 32.5px
-        .language
+        &__language
             display: inline-flex
             align-items: center
             gap: 8px
             padding-left: 32.5px
             border-left: 1px solid $border-color
             height: 100%
+            a
+                display: inline-flex
+                vertical-align: center
+                gap: 8px
+                text-decoration: none
+                color: $text-color-black
+        &__button
+                padding: 8px
+                display: flex
+                gap: 8px
+                width: 74px
+                height: 33px
+                background: #FFFFFF
+                border: 1px solid #8595AD
+                border-radius: 4px
+                font-weight: 700
+                font-size: 12px
+                line-height: 140%
+                letter-spacing: 0.02em
+                color: $text-color-black
+.home
+    margin-top: 50px
+    padding-bottom: 80px
+    border-bottom: 1px solid $border-color
+    &__filter-wrapper
+        display: flex
+        position: relative
+        width: 530px
+        button
+            display: flex
+            margin-left: 16px
+            justify-content: center
+            align-items: center
+            position: absolute
+            right: 0
+            top: -45%
+            gap: 8px
+            width: 175px
+            height: 44px
+            background: $text-color-blue
+            border-radius: 4px
+            border: none
+            font-weight: 700
+            font-size: 14px
+            line-height: 140%
+            color: #FFFFFF
+            display: none
+        .title
+            padding-right: 100px
+            height: 24px
+            font-weight: 700
+            font-size: 24px
+            line-height: 130%
+            letter-spacing: -0.02em
+            color: $text-color-black
+    &__subtitle
+        font-weight: 700
+        font-size: 24px
+        line-height: 130%
+        letter-spacing: -0.02em
+        color: $text-color-black
+        padding: 40px 0 32px 0
+    &__cards
+        display: flex
+        flex-wrap: wrap
+        margin-right: 0
+        gap: 20px
+        .card
+            width: 380px
+            height: 310px
+            margin: 20px 0
+            &__link
+                font-weight: 700
+                font-size: 14px
+                line-height: 160%
+                align-items: center
+                letter-spacing: -0.01em
+                color: $text-color-blue
+                text-decoration: none
+                display: block
+                padding-top: 6px
+            &__descr
+                font-weight: 700
+                font-size: 16px
+                line-height: 160%
+                letter-spacing: -0.01em
+                color: $text-color-black
+            &__subdescr
+                font-weight: 400
+                font-size: 14px
+                line-height: 160%
+                letter-spacing: -0.01em
+                color: $text-color-gray
+    &__news
+        .news-title
+            display: inline-flex
+            align-items: center
+            padding-top: 80px
+            h2
+                font-weight: 700
+                font-size: 32px
+                line-height: 130%
+                letter-spacing: -0.02em
+                color: $text-color-black
+                padding-right: 16px  
+            a
+                border-left: 1px solid $border-color
+                font-weight: 400
+                font-size: 16px
+                padding-left: 16px
+                line-height: 160%
+                letter-spacing: -0.01em
+                color: $text-color-blue
+                text-decoration: none
+        .news-cards
+            padding-top: 32px
+            display: flex
+            flex-wrap: wrap
+            gap: 20px
+            .card
+                width: 516px
+                min-height: 228px
+                &__circle
+                    width: 48px
+                    height: 48px
+                    border-radius: 50%
+                    background-color: #FF9696
+                .second-circle
+                    background-color: #73E785
+                .third-circle
+                    background-color: #E7C673
+                &__descr
+                    display: flex
+                    padding-top: 18px
+                    h5
+                        font-weight: 700
+                        font-size: 14px
+                        line-height: 160%
+                        letter-spacing: -0.01em
+                        color: $text-color-gray
+                        padding-right: 16px  
+                    p
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 160%
+                        letter-spacing: -0.01em
+                        color: $text-color-gray
+                        padding-left: 16px
+                        border-left: 1px solid $border-color
+                &__title
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 130%
+                    letter-spacing: -0.02em
+                    color: $text-color-blue
+                    padding-top: 9px
+                &__about-news
+                    font-family: 'Inter'
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 160%
+                    letter-spacing: -0.01em
+                    color: $text-color-black
+                    padding-top: 9px
+                &__link
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 160%
+                    letter-spacing: -0.01em
+                    color: $text-color-blue
+                    text-decoration: none
+                    padding-top: 20px
+                    display: block

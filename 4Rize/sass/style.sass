@@ -1,16 +1,21 @@
-@import 'libs/_fonts.scss'
 @import 'base/_variables.scss'
 
 @import 'blocks/_aside.sass'
 @import 'blocks/_main.sass'
+@import 'blocks/_footer.sass'
+@import 'blocks/_filter-tablet.sass'
+
 
 *
     box-sizing: border-box
     margin: 0
     padding: 0
-    font-family: 'Inter'
+    
+html
+    font-family: "Inter", sans-serif
 
 .wrapper
     display: grid
     grid-template-columns: 228px auto
-
+    
+@import 'blocks/_media.sass'

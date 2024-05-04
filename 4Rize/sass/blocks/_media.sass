@@ -1,0 +1,145 @@
+@media ( max-width:  1879px)
+    .home__cards
+        justify-content: center
+        .card
+            margin: 0
+            margin-bottom: 20px
+        
+    .news-cards
+        justify-content: center
+        align-items: center
+        .card:last-child
+            margin-top: 32px
+
+@media ( max-width: 1471px)
+    .home
+        &__filter-wrapper
+            .title
+                border-right: 1px solid $border-color
+            button
+                display: flex
+    nav
+        .logo-hide
+            display: block
+        .menu-list
+            display: none
+        .right-side
+            &__language
+                border-left: none
+                margin-right: 56px
+            &__user
+                display: none
+            &__button
+                display: flex !important
+    .wrapper
+        display: block
+    aside
+        display: none
+    
+@media ( max-width: 1115px)
+    .news-cards
+        .card:last-child
+            margin-top: 0
+    footer
+        display: block
+        .left-side
+            display: none
+        .right-side
+            display: none   
+        .tablets
+            width: 100%
+            display: flex !important
+            justify-content: space-between
+            &__links
+                margin: 0 auto
+                width: 100px
+                a
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 160%
+                    letter-spacing: -0.01em
+                    color: $text-color-blue
+                    text-decoration: none
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    p
+                        text-align: center
+                    
+                    
+@media ( max-width: 600px)
+    .home
+        &__filter-wrapper
+            display: flex
+            flex-direction: column
+            width: auto
+            .title
+                width: auto
+                border-right: none
+                text-align: center
+                padding-right: 0
+            button
+                top: none
+                margin: 16px auto 0 auto
+                position: relative
+        &__subtitle
+            text-align: center
+        &__news
+            .news-title
+                display: flex
+                flex-direction: column
+                align-items: start
+                a
+                    border: none
+                    padding-left: 0
+                    margin-top: 16px
+    nav
+        .logo-hide
+            display: none
+        .right-side
+            display: flex
+            justify-content: space-between !important
+            width: 100%
+            .logo-mobile
+                display: block
+            &__language
+                padding-left: 0
+                margin: 0     
+            
+                    
+@media ( max-width: 565px)
+    .home
+        &__news
+            .news-cards  
+                display: flex
+                flex-direction: column
+                align-items: center
+                .card
+                    width: 280px
+                .card:last-child
+                    margin-bottom: 82px
+        &__cards
+            display: flex
+            flex-direction: column
+            align-items: center
+            .card
+                width: 280px
+                height: 260px
+                img
+                    width: 280px
+    .main-container
+        padding: 0 15px   
+
+
+@media ( max-width: 446px)
+    .home
+        &__filter-wrapper
+            .title
+                text-align: left
+            button
+                margin: 16px 0 0 0
+        &__subtitle
+            text-align: left
+            width: 290px
+        
+
