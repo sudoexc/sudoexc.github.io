@@ -280,18 +280,20 @@
     left: 0
     transform: translateX(100%)
     width: 100%
-    height: 200%
+    height: 1280px
     z-index: 10
     display: none
+    transition: transform 1s ease
     opacity: 0
     &.active
+        transition: left 1s ease
         left: -330px
         display: block
         opacity: 1
     &__aside
         position: fixed
         width: 330px
-        height: 100%
+        height: 1280px
         left: 0
         background-color: rgba(255, 255, 255, 1)
         z-index: 15
@@ -313,6 +315,7 @@
         left: -100%
         width: 100%
         height: 1280px
+        z-index: 13
         background-color: rgba(0, 0, 0, 0.5)
 
 .tablet-btn
@@ -334,3 +337,5 @@
         border: none
         margin-left: 32px
 
+.phone-btn
+    display: none

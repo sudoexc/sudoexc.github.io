@@ -1,3 +1,6 @@
+.home
+    background-color: rgba(246, 247, 249, 1)
+
 .main-container
     padding: 0 32px
 
@@ -53,17 +56,20 @@ nav
             margin-right: 32.5px
         &__language
             display: inline-flex
-            align-items: center
             gap: 8px
             padding-left: 32.5px
             border-left: 1px solid $border-color
             height: 100%
+            vertical-align: center 
             a
-                display: inline-flex
+                display: flex
+                align-items: center
                 vertical-align: center
                 gap: 8px
                 text-decoration: none
                 color: $text-color-black
+                
+                    
         &__button
                 padding: 8px
                 display: flex
@@ -79,7 +85,7 @@ nav
                 letter-spacing: 0.02em
                 color: $text-color-black
 .home
-    margin-top: 50px
+    padding-top: 50px
     padding-bottom: 80px
     border-bottom: 1px solid $border-color
     &__filter-wrapper
@@ -121,14 +127,17 @@ nav
         color: $text-color-black
         padding: 40px 0 32px 0
     &__cards
-        display: flex
-        flex-wrap: wrap
-        margin-right: 0
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
         gap: 20px
         .card
-            width: 380px
-            height: 310px
-            margin: 20px 0
+            max-width: 331px
+            min-height: 293px
+            margin: 0
+            padding-right: 0
+            &__img
+                max-width: 331px
+                border-radius: 8px
             &__link
                 font-weight: 700
                 font-size: 14px
@@ -141,6 +150,7 @@ nav
                 padding-top: 6px
             &__descr
                 font-weight: 700
+                text-decoration: none
                 font-size: 16px
                 line-height: 160%
                 letter-spacing: -0.01em
@@ -174,12 +184,11 @@ nav
                 text-decoration: none
         .news-cards
             padding-top: 32px
-            display: flex
-            flex-wrap: wrap
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
             gap: 20px
             .card
-                width: 516px
-                min-height: 228px
+                max-width: 496px
                 &__circle
                     width: 48px
                     height: 48px
@@ -192,7 +201,8 @@ nav
                 &__descr
                     display: flex
                     padding-top: 18px
-                    h5
+                    a
+                        text-decoration: none
                         font-weight: 700
                         font-size: 14px
                         line-height: 160%
@@ -207,7 +217,27 @@ nav
                         color: $text-color-gray
                         padding-left: 16px
                         border-left: 1px solid $border-color
+                &__descr-phone
+                    display: none
+                    padding: 16px 0
+                    a
+                        text-decoration: none
+                        font-weight: 700
+                        font-size: 14px
+                        line-height: 160%
+                        letter-spacing: -0.01em
+                        color: $text-color-gray
+                        padding-right: 16px  
+                    p
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 160%
+                        letter-spacing: -0.01em
+                        color: $text-color-gray
+                        padding-top: 4px
                 &__title
+                    display: block
+                    text-decoration: none
                     font-weight: 700
                     font-size: 20px
                     line-height: 130%
@@ -218,6 +248,7 @@ nav
                     font-family: 'Inter'
                     font-weight: 400
                     font-size: 14px
+                    max-width: 430px
                     line-height: 160%
                     letter-spacing: -0.01em
                     color: $text-color-black
